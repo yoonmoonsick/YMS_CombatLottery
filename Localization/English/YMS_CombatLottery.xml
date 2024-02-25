@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<contentList>
+	<content contentuid="REGISTERED_NAME" version="1">Registered</content>
+	<content contentuid="REGISTERED_DESC" version="1">This character has been registered on the lottery list to participate in the combat.</content>
+	<content contentuid="REGISTER_NAME" version="1">Register</content>
+	<content contentuid="REGISTER_DESC" version="1">Register self for the lottery list to participate in the combat. If deactivated, unregistered.</content>
+	<content contentuid="REGISTER_ALLY_NAME" version="1">Register Allies</content>
+	<content contentuid="REGISTER_ALLY_DESC" version="1">"Register allies for the lottery list to participate in the combat. If deactivated, unregistered.</content>
+</contentList>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<contentList>
+	<content contentuid="REGISTERED_NAME" version="1">등록됨</content>
+	<content contentuid="REGISTERED_DESC" version="1">이 캐릭터는 전투에서 제외될 명단에 등록되었습니다.</content>
+	<content contentuid="REGISTER_NAME" version="1">등록</content>
+	<content contentuid="REGISTER_DESC" version="1">이 캐릭터를 전투에서 제외될 명단에 등록합니다. 비활성화하면 등록이 해제됩니다.</content>
+	<content contentuid="REGISTER_ALLY_NAME" version="1">아군 등록</content>
+	<content contentuid="REGISTER_ALLY_DESC" version="1">모든 아군을 전투에서 제외될 명단에 등록합니다. 비활성화하면 등록이 해제됩니다.</content>
+</contentList>

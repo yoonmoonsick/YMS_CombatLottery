@@ -1,0 +1,1 @@
+Ext.Require("Server/YMS_CombatLottery.lua")
