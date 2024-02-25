@@ -104,6 +104,13 @@ Ext.Osiris.RegisterListener("EnteredCombat", 2, "before", function(CharID, newCo
         local newPosition1, newPosition2, newPosition3 = Osi.GetPosition(Party[1][1])
         print("[CMBT_LTRY_DBG]: 전투 시작, 아바타 기존 위치: ", oldPosition[1], oldPosition[2], oldPosition[3])
         print("[CMBT_LTRY_DBG]: 전투 시작, 아바타 신규 위치: ", newPosition1, newPosition2, newPosition3)
+        -- 캐릭터 추방하기 전에 추방된거 되돌리기 (몇몇 전투에서 추방된 캐릭터가 전투에 참여해서 캐릭터 3개로 싸워야하는 버그가 있음)
+        for i = #Party, 1, -1 do 
+            print("[CMBT_LTRY_DBG]: 추방 해제:", Party[i][1])
+            Osi.RemovePassive(Party[i][1], "DISABLED_IN_COMBAT")
+            Osi.SetCanJoinCombat(Party[i][1], 1)
+            -- Osi.TeleportToPosition(Party[i][1], oldPosition[1], oldPosition[2], oldPosition[3])
+        end
         -- 목록 섞기
         setTeleportList()
         -- 캐릭터 추방
